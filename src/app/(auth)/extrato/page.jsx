@@ -3,6 +3,7 @@
 import CategoriasCreate from "@/components/Categorias/CategoriasCreate";
 import MetasCreate from "@/components/Metas/MetasCreate";
 import TransacoesCreate from "@/components/Transacoes/TransacoesCreate";
+import TransacoesList from "@/components/Transacoes/TransacoesList";
 import Button from "@mui/material/Button";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -72,6 +73,7 @@ export const ExtratoPage = () => {
         openModal={openModalTransacao}
         closeModal={setOpenModalTransacao}
       />
+      <TransacoesList />
     </>
   );
 };

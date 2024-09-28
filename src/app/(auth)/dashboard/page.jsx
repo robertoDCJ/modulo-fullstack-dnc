@@ -1,5 +1,6 @@
 "use client";
 
+import Chart from "@/components/Chart";
 // import TransacoesCreate from "@/components/Transacoes/TransacoesCreate";
 // import TransacoesUpdate from "@/components/Transacoes/TransacoesUpdate";
 // import MetasCreate from "@/components/Metas/MetasCreate";
@@ -35,6 +36,7 @@ export const DashboardPage = () => {
   return (
     <div>
       <h1>Dashboard</h1>
+      <Chart />
       {/* <CategoriasCreate /> */}
       {/* <CategoriasUpdate categoriaId={1} /> */}
       {/* <MetasCreate /> */}
