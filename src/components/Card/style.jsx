@@ -1,4 +1,8 @@
 import styled from "@emotion/styled";
+import FormControlMUI from "@mui/material/FormControl";
+import InputLabelMUI from "@mui/material/InputLabel";
+import MenuItemMUI from "@mui/material/MenuItem";
+import SelectMUI from "@mui/material/Select";
 
 export const CardContainer = styled.div`
   background-color: #fff;
@@ -17,3 +21,8 @@ export const Content = styled.div`
   width: 100%;
   text-align: center;
 `;
+
+export const FormControl = styled(FormControlMUI)``;
+export const InputLabel = styled(InputLabelMUI)``;
+export const Select = styled(SelectMUI)``;
+export const MenuItem = styled(MenuItemMUI)``;

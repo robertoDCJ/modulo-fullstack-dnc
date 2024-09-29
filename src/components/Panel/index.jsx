@@ -14,7 +14,6 @@ export const Panel = () => {
     despesa: 0,
   });
   const [metas, setMetas] = useState([]);
-  const [meta, setMeta] = useState({});
 
   useEffect(() => {
     const getTransacao = async () => {
@@ -82,7 +81,13 @@ export const Panel = () => {
           <Card label="Despesas" value={`R$ ${somatorio.despesa / 100}`}>
             <LocalAtmIcon />
           </Card>
-          <Card label="Metas" value="R$ 250,00" isMeta>
+          <Card
+            label="Metas"
+            value="R$ 250,00"
+            isMeta
+            metas={metas}
+            saldo={somatorio.saldo}
+          >
             <AdsClickIcon />
           </Card>
         </Grid>
