@@ -41,9 +41,7 @@ export const Panel = () => {
         somatorio.saldo = somatorio.receita - somatorio.despesa;
 
         setSomatorio(somatorio);
-      } catch (error) {
-        console.log(error);
-      }
+      } catch (_) {}
     };
 
     getTransacao();
@@ -58,9 +56,7 @@ export const Panel = () => {
         });
 
         setMetas(response.data.data);
-      } catch (error) {
-        console.log(error);
-      }
+      } catch (_) {}
     };
 
     getMetas();

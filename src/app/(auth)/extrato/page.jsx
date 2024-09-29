@@ -9,10 +9,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export const ExtratoPage = () => {
-  const [user, setUser] = useState({
-    id: null,
-  });
-
   const [openModalCategoria, setOpenModalCategoria] = useState(false);
   const [openModalMeta, setOpenModalMeta] = useState(false);
   const [openModalTransacao, setOpenModalTransacao] = useState(false);
@@ -28,10 +24,8 @@ export const ExtratoPage = () => {
           Authorization: `Bearer ${token}`,
         },
       })
-      .then((response) => {
-        setUser(response.data.data);
-      })
-      .catch((error) => {
+      .then((_) => {})
+      .catch((_) => {
         window.location.href = "/login";
       });
   }, []);

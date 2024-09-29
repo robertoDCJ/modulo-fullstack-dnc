@@ -69,7 +69,6 @@ export const MetasCreate = ({ openModal, closeModal }) => {
     const { name, value } = e.target;
     if (name === "description") setDescription(value);
     if (name === "value") setValue(value);
-    // if (name === "date") setDate(value);
   };
 
   const onSubmit = async (e) => {
@@ -141,7 +140,6 @@ export const MetasCreate = ({ openModal, closeModal }) => {
             const formData = new FormData(event.currentTarget);
             const formJson = Object.fromEntries(formData.entries());
             const email = formJson.email;
-            console.log(email);
             handleCloseModal();
           },
         }}
