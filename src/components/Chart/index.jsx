@@ -71,24 +71,6 @@ export const Chart = () => {
     height: 400,
   };
 
-  //   const dataset = [
-  //     {
-  //       receita: 1200000,
-  //       despesa: 800000,
-  //       ano: "2020",
-  //     },
-  //     {
-  //       receita: 1800000,
-  //       despesa: 1000000,
-  //       ano: "2021",
-  //     },
-  //     {
-  //       receita: 2200000,
-  //       despesa: 1100000,
-  //       ano: "2023",
-  //     },
-  //   ];
-
   function valueFormatter(value) {
     return `R$ ${value / 100}`;
   }
